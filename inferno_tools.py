@@ -2,6 +2,12 @@ import os, inferno_var
 
 
 def run():
+    libs = [
+        "Inpy",
+        "cockroach",
+        "TikCheck",
+        "notify"
+    ]
     try:
         from inpy import input as n
         import cockroach
@@ -13,8 +19,8 @@ def run():
 
         if response == "y":
             l = 0
-            while l < len(inferno_var.libs):
-                os.system(f"pip install git+https://github.com/Inferno-God1001/{inferno_var.libs[l]}.git")
+            while l < len(libs):
+                os.system(f"pip install git+https://github.com/Inferno-God1001/{libs[l]}.git")
                 l += 1
             from inpy import input    
         else:
