@@ -1,4 +1,4 @@
-import os, inferno_var
+import os
 
 
 def run():
